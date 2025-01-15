@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunnyside</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <!-- Hero Section -->
+        <div class="hero">
+            <!-- Navbar -->
+           
+            <div class="navbar">
+                <h2><a href="#">Sunnyside</a></h2>
+                <div>
+                   <ul>
+                      
+                       <li><a href="#about"   class="nav-link">About</a></li>
+                       <li><a href="#services" class="nav-link">Services</a></li>
+                       <li><a href="#projects"  class="nav-link">Projects</a></li>
+                       <li><a href="#contact"  class="nav-link">Contact</a></li>
+                   </ul>
+                   <img class="hamburger" src="./images/icon-hamburger.svg" alt="">
+                 
+                </div>
+                <div class="nav-list">
+                    <p><a href="#about" class="nav-link">About</a></p>
+                    <p><a href="#services" class="nav-link">Services</a></p>
+                    <p><a href="#projects" class="nav-link">Projects</a></p>
+                    <p><a href="#contact" class="nav-link">Projects</a></p>
+                </div>
+            </div>
+           
+
+            <!-- Hero Content -->
+            <div class="hero-content">
+                <h1>WE ARE CREATIVES</h1>
+                <img class="down-arrow" src="./images/icon-arrow-down.svg" alt="Down Arrow">
+                <img class="hero-image" src="./images/desktop/image-header.jpg" alt="Header Image">
+            </div>
+        </div>
+
+
+        <div id="about" class="About">
+            <div class="first-sec">
+               <div class="left-side">
+                 <div class="text">
+                    <h1>Transform your brand</h1>
+                    <p>We are a full-service creative agency specializing in helping brands grow fast.Enagage your clients through compelling visuals that do most of the marketing for you.</p>
+                    <a href="#">LEARN MORE</a>
+                 </div>
+               </div>
+
+               <div class="right-side">
+                  <img src="./images/desktop/image-transform.jpg" alt="">
+               </div>
+            </div>
+
+
+            <div class="second-sec">
+                 <div class="second-left">
+                      <img src="./images/desktop/image-stand-out.jpg" alt="">
+                 </div>
+                 <div class="second-right">
+                      <div class="text">
+                         <h1>Stand out to the right audience</h1>
+                         <p>Using a collabarative formula of designers, researchers, photographers, videographers, and copywriters, we'll build and extend your brand in digital places.</p>
+                         <a href="#">LEARN MORE</a>
+                      </div>
+                 </div>
+            </div>
+
+
+            <div id="projects" class="third-sec">
+                <div class="third-left">
+                <h1>Graphic Design</h1>
+                <p>Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients' attention.</p>
+                </div>
+                <div class="third-right">
+                   <h1>Photography</h1>
+                   <p>Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+                </div>
+
+            </div>
+
+
+
+            <div id="services"  class="fourth-sec">
+               <h1>CLIENT TESTIMONIALS</h1>
+               <div class="profiles">
+                   <div class="profile">
+                       <img src="./images/image-emily.jpg" alt="">
+                       <p>"We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit."</p>
+                       <div class="name">
+                        <h2>Emily R.</h2>
+                        <h3>Marketing Director</h3>
+                       </div>
+                   </div>
+
+                   <div class="profile">
+                       <img src="./images/image-thomas.jpg" alt="">
+                       <p>"Sunnyside's enthusiasm coupled with their keen interest in our brand's success made it a satisfying and enjoyable experience."</p>
+                       <div class="name">
+                        <h2>Thomas S.</h2>
+                       <h3>Chief Operating Officer</h3>
+                       </div>
+                   </div>
+
+                   <div class="profile">
+                       <img src="./images/image-jennie.jpg" alt="">
+                       <p>"Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!"</p>
+                      <div class="name">
+                        <h2>Jennie F.</h2>
+                        <h3>Business Owner</h3>
+                      </div>
+                   </div>
+               </div>
+            </div>
+
+
+
+            <div id="contact" class="fifth-sec">
+               <div class="fifth-top">
+                <img src="./images/desktop/image-gallery-milkbottles.jpg" alt="">
+                <img src="./images/desktop/image-gallery-orange.jpg" alt="">
+                <img src="./images/desktop/image-gallery-cone.jpg" alt="">
+                <img src="./images/desktop/image-gallery-sugarcubes.jpg" alt="">
+               </div>
+
+               <div class="footer">
+                 <h1>sunnyside</h1>
+                 <ul class="list">
+                     <li>About</li>
+                     <li>Services</li>
+                     <li>Projects</li>
+                 </ul>
+
+                 <ul class="social">
+                    <li><img src="./images/icon-facebook.svg" alt=""></li>
+                    <li><img src="./images/icon-instagram.svg" alt=""></li>
+                    <li><img src="./images/icon-twitter.svg" alt=""></li>
+                    <li><img src="./images/icon-pinterest.svg" alt=""></li>
+                 </ul>
+               </div>
+
+            </div>
+        </div>
+    </main>  
+
+    <script>
+ 
+    // Select the hamburger icon and the menu
+    const hamburger = document.querySelector('.hamburger');
+    const menu = document.querySelector('.nav-list ');
+
+    // Add click event to toggle the menu visibility
+    hamburger.addEventListener('click', () => {
+        menu.classList.toggle('active');
+    });
+
+    // Select all navbar links
+const navLinks = document.querySelectorAll('.nav-link');
+
+// Add click event listener to each link
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    // Remove 'active' class from all links
+    navLinks.forEach(nav => nav.classList.remove('active'));
+    
+    // Add 'active' class to the clicked link
+    link.classList.add('active');
+  });
+});
+
+</script>
+
+   
+</body>
+</html>

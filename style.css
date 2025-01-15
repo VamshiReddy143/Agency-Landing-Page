@@ -94,9 +94,9 @@ html, body {
     color: #fff;
     text-align: center;
     left: 50%;
-    top: 30%;
+    top: 25%;
     transform: translateX(-50%);
-    font-size: 2rem;
+    font-size: 4rem;
     font-family: 'Fraunces', serif;
     font-weight: 900;
     text-transform: uppercase;
@@ -107,7 +107,7 @@ html, body {
     position: absolute;
     text-align: center;
     left: 50%;
-    top: 40%;
+    top: 45%;
     transform: translateX(-50%);
 }
 
